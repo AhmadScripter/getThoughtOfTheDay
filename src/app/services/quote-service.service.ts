@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class QuoteServiceService {
-  private apiUrl = 'https://thought-of-the-day.p.rapidapi.com/thought';
+  private apiUrl = 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote?token=ipworld.info';
 
   constructor(private http:HttpClient){}
 

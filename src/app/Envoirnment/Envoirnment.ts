@@ -5,5 +5,5 @@ export const envoirnmentVariable = {
     xRapidApiKeyValue: 'd77e8efd8cmsh17d2c3a506c7339p1612fdjsn70f0fd0b1ea4',
 
     xRapidApiHostName: 'X-RapidAPI-Host',
-    xRapidApiHostValue:  'thought-of-the-day.p.rapidapi.com'
+    xRapidApiHostValue:  'quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com'
 }

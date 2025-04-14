@@ -1,13 +1,15 @@
 <div class="main">
     <div *ngIf="isLoaded">
-        <!-- <mat-progress-spinner mode="indeterminate"></mat-progress-spinner> -->
-        <div class="preloader"><div></div></div>
+        <div class="preloader">
+            <div></div>
+        </div>
     </div>
 
 
     <div class="container">
         <h1>Thought of the Day</h1>
-        <p>{{thought?.data}}</p>
+        <p class="text">{{thought?.text}}</p>
+        <p><strong>- {{thought?.author}}</strong></p>
         <button (click)="fetchData()">Get more</button>
     </div>
 </div>

@@ -16,11 +16,18 @@ export class QuoteComponentComponent implements OnInit{
    this.fetchData()
   }
 
-  fetchData(){
+  fetchData() {
     this.isLoaded = true;
-    this.quoteService.getThoughtOfTheDay().subscribe((data)=>{
-      this.thought = data;
-      this.isLoaded = false;
-    })
+    this.quoteService.getThoughtOfTheDay().subscribe({
+      next: (data) => {
+        this.thought = data;
+        this.isLoaded = false;
+      },
+      error: (err) => {
+        console.error('Error fetching quote:', err);
+        this.isLoaded = false;
+      }
+    });
   }
+  
 }

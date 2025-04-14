@@ -1,4 +1,4 @@
 export interface Quote {
-    status: number;
-    data: string;
-}
+    author: string;
+    text: string;
+}  

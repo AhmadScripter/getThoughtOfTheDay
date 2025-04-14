@@ -16,13 +16,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Optional background overlay */
   z-index: 999;
-  /* Ensure the preloader is on top of other elements */
 }
 
 .preloader div {
-  /* Customize the spinner animation (e.g., using a CSS library) */
   width: 50px;
   height: 50px;
   border: 5px solid #fff;
@@ -45,7 +42,7 @@
 
 .container {
   position: relative;
-  min-height: 35vh;
+  min-height: 45vh;
   width: 450px;
   background: #0C2D57;
   display: flex;
@@ -78,13 +75,16 @@ h1 {
   color: #FC6736;
 }
 
-p {
+p.text {
   font-size: 20px;
   color: #EFECEC;
   font-family: sans-serif;
-  margin-top: 10px;
+  margin-top: 30px;
 }
-
+strong{
+  color: #fff;
+  font-style: italic;
+}
 button {
   font-size: 16px;
   font-weight: 600;
